@@ -1,0 +1,80 @@
+/* Global Styles - AmpAfrika Design System */
+$primary-color: #00e676;
+$primary-dark: #00b050;
+$bg-dark: #0a0a0a;
+$surface-dark: #141414;
+$card-border: rgba(255, 255, 255, 0.08);
+$text-light: #ffffff;
+$text-muted: #9aaec2;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: $bg-dark;
+  color: $text-light;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+code, .mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  &:hover { color: lighten($primary-color, 15%); }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: #000;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  display: inline-block;
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  color: $text-light;
+  border: 1px solid $card-border;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  &:hover {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+}
+
+.badge {
+  background: rgba(0, 230, 118, 0.1);
+  color: $primary-color;
+  border: 1px solid rgba(0, 230, 118, 0.3);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}

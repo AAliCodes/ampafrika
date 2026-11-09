@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "framework": "angular",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "dist/ampafrika-umbrella-frontend/browser",
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ]
+}
